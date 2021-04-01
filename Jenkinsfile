@@ -7,20 +7,20 @@ pipeline {
         stage('Clean') {
             steps {
               
-                 bat "mvnw clean "
+                 bat "mvn clean "
             }
             
 
         }
         stage('compile'){
-             steps{bat "mvnw compile "}
+             steps{bat "mvn compile "}
              
             
             
         }
         stage('test'){
             steps{
-                bat "mvnw test "
+                bat "mvn test "
             }
                 post {
                 // If Maven was able to run the tests, even if some of the test
@@ -33,7 +33,7 @@ pipeline {
         }
         
         stage('package'){
-           steps{ bat "mvnw package"}
+           steps{ bat "mvn package"}
         }
     }
 }
