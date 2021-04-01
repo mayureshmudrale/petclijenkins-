@@ -1,0 +1,115 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-01T06:33:14.804Z",
+        "before": [
+          {
+            "result": {
+              "duration": 27000800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.selenium.steps.BaseSteps.logBeforeScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 12583003200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.selenium.steps.BaseSteps.initializeDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1999500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.selenium.runners.SpringBootRunner.setupCucumberSpringContext()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User can do a search from the home page",
+        "description": "",
+        "id": "home-page-search-tests;user-can-do-a-search-from-the-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 27000900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.selenium.steps.BaseSteps.logAfterScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 751028200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.selenium.steps.BaseSteps.closeDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 194995000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I search \"Selenium\" in the search input of the home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Selenium",
+                  "offset": 10
+                }
+              ],
+              "location": "com.example.selenium.steps.HomeSteps.iSearchInTheSearchInputOfTheHomePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 873001300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I press the search button in the home page",
+            "match": {
+              "location": "com.example.selenium.steps.HomeSteps.iPressTheSearchButtonInTheHomePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112996400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the links are displayed on the results page",
+            "match": {
+              "location": "com.example.selenium.steps.ResultsSteps.theLinksAreDisplayedOnTheResultsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Search Tests",
+    "description": "",
+    "id": "home-page-search-tests",
+    "keyword": "Feature",
+    "uri": "classpath:features/HomeSearch.feature",
+    "tags": []
+  }
+]
